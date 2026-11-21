@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lobo Games — Tienda de Videojuegos</title>
+  <link rel="stylesheet" href="css/base/tokens.css">
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/components/button.css">
+  <link rel="stylesheet" href="css/components/search.css">
+  <link rel="stylesheet" href="css/layout/header.css">
+  <link rel="stylesheet" href="css/layout/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__brand">LOBO GAMES</a>
+
+      <input type="checkbox" id="menu-toggle" class="header__toggle">
+      <label for="menu-toggle" class="header__toggle-label" aria-label="Abrir menú">☰</label>
+
+      <nav class="header__nav" aria-label="Navegación principal">
+        <ul class="header__nav-list">
+          <li><a href="#" class="header__nav-link">Tienda</a></li>
+          <li><a href="#" class="header__nav-link">Ofertas</a></li>
+          <li><a href="#" class="header__nav-link">Biblioteca</a></li>
+        </ul>
+      </nav>
+
+      <form class="search-form" role="search">
+        <input type="search" class="search-form__input" placeholder="Buscar juegos..." aria-label="Buscar juegos">
+        <button type="submit" class="search-form__btn">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="catalog" aria-labelledby="catalog-heading">
+      <div class="catalog__inner">
+        <header class="catalog__header">
+          <h1 id="catalog-heading" class="catalog__title">Juegos destacados</h1>
+          <p class="catalog__subtitle">Explora títulos populares y ofertas de la semana</p>
+        </header>
+
+        <div class="catalog__grid">
+          <article class="game-card">
+            <div class="game-card__media">
+              <span class="game-card__badge game-card__badge--sale">-25%</span>
+            </div>
+            <div class="game-card__body">
+              <h2 class="game-card__title">Cyber Wolf 2077</h2>
+              <p class="game-card__genre">Acción · RPG</p>
+              <div class="game-card__footer">
+                <span class="game-card__price">$44.99</span>
+                <a href="#" class="btn btn--primary">Ver juego</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-card__media"></div>
+            <div class="game-card__body">
+              <h2 class="game-card__title">Echoes of the Sierra</h2>
+              <p class="game-card__genre">Aventura · Indie</p>
+              <div class="game-card__footer">
+                <span class="game-card__price">$19.99</span>
+                <a href="#" class="btn btn--primary">Ver juego</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-card__media">
+              <span class="game-card__badge game-card__badge--new">Nuevo</span>
+            </div>
+            <div class="game-card__body">
+              <h2 class="game-card__title">Orbit Strikers</h2>
+              <p class="game-card__genre">Multijugador · Sci-Fi</p>
+              <div class="game-card__footer">
+                <span class="game-card__price">Gratis</span>
+                <a href="#" class="btn btn--primary">Jugar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

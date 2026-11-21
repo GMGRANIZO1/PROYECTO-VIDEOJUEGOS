@@ -1,0 +1,22 @@
+:root {
+  --bg-canvas: #0b0d12;
+  --bg-surface: #121620;
+  --bg-elevated: #181d2a;
+  --text-primary: #f3f6fc;
+  --text-secondary: #9aa4b8;
+  --accent-primary: #6c5ce7;
+  --accent-hover: #8275f0;
+  --border-subtle: #242b3d;
+  --danger: #e05260;
+
+  --header-height: 68px;
+  --radius-md: 8px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+}
